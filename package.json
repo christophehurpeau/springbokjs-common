@@ -1,0 +1,34 @@
+{
+  "name": "springbokjs-common",
+  "description": "SpringbokJS common stuff for browser and server",
+  "version": "0.1.0",
+  "keywords": [
+    "springbokjs"
+  ],
+  "repository": "git://github.com/christophehurpeau/springbokjs-common.git",
+  "homepage": "http://springbokjs.org",
+  "license": "MIT",
+  "author": "Christophe Hurpeau <christophe@hurpeau.com> (http://christophe.hurpeau.com/)",
+  "scripts": {
+    "test": "make test"
+  },
+  "main": "./lib/index.js",
+  "peerDependencies": {
+    "springbokjs-dom": "^0.6",
+    "springbokjs-dom-components": "^0.2",
+    "springbokjs-utils": "^1.0.0",
+    "springbokjs-db": "^0.1",
+    "socket.io": ">=1.0.0"
+  },
+  "dependencies": {
+    "springbokjs-di": "^0.4.1",
+    "springbokjs-router": "^3.4.0",
+    "yielded": "^0.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8",
+    "mocha": "^2.0",
+    "proclaim": "^2.0",
+    "springbokjs-library": "^3.3.3"
+  }
+}
