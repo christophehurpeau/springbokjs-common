@@ -1,5 +1,5 @@
 global.S = require('springbokjs-utils');
-S.newClass = require('springbokjs-utils/lib/class').newClass;
+S.newClass = require('es6like-class').newClass;
 require('springbokjs-utils/string/html');
 require('springbokjs-utils/string/normalize');
 

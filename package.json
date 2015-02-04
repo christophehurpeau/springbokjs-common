@@ -1,7 +1,7 @@
 {
   "name": "springbokjs-common",
   "description": "SpringbokJS common stuff for browser and server",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "keywords": [
     "springbokjs"
   ],
@@ -21,6 +21,7 @@
     "socket.io": ">=1.0.0"
   },
   "dependencies": {
+    "es6like-class": "^0.1.0",
     "springbokjs-di": "^0.5.0",
     "springbokjs-router": "^3.4.1",
     "yielded": "^0.3.1"
@@ -29,6 +30,6 @@
     "gulp": "^3.8",
     "mocha": "^2.1",
     "proclaim": "^2.0",
-    "springbokjs-library": "^3.4.0"
+    "springbokjs-library": "^3.4.1"
   }
 }
