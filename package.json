@@ -1,7 +1,7 @@
 {
   "name": "springbokjs-common",
   "description": "SpringbokJS common stuff for browser and server",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "springbokjs"
   ],
@@ -15,7 +15,7 @@
   "main": "./lib/index.js",
   "peerDependencies": {
     "springbokjs-dom": "^0.8",
-    "springbokjs-dom-components": "^0.3",
+    "springbokjs-dom-components": "^0.4",
     "springbokjs-utils": "^1.0.1",
     "springbokjs-db": "^0.1.2",
     "socket.io": ">=1.0.0"
