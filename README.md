@@ -1,8 +1,8 @@
-springbokjs-browser
+springbokjs-common [![NPM version][npm-image]][npm-url]
 ============================
 
-Tools and frameworks from browser
+Tools and frameworks from browser and server
 
-```
-http://cdn.polyfill.io/v1/polyfill.min.js?features=Array,String,Date,Object,Function,JSON,Promise,XMLHttpRequest,document,Element,Navigator,Event,CustomEvent,getComputedStyle
-```
+
+[npm-image]: https://img.shields.io/npm/v/springbokjs-common.svg?style=flat
+[npm-url]: https://npmjs.org/package/springbokjs-common
