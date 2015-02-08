@@ -1,7 +1,7 @@
 {
   "name": "springbokjs-common",
   "description": "SpringbokJS common stuff for browser and server",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "keywords": [
     "springbokjs"
   ],
@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "es6like-class": "^0.1.0",
-    "springbokjs-di": "^0.5.0",
-    "springbokjs-router": "^3.4.1",
+    "springbokjs-di": "^0.5.1",
+    "springbokjs-router": "^3.4.2",
     "yielded": "^0.3.1"
   },
   "devDependencies": {

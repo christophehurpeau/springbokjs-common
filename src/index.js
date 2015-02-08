@@ -17,8 +17,6 @@ S.newController = function(descriptor) {
     descriptor.static = descriptor.static || {};
     descriptor.static.singleton = false;
     descriptor.extends = descriptor.extends || S.Controller;
-
-    console.log(descriptor.extends);
     return S.newClass(descriptor);
 };
 

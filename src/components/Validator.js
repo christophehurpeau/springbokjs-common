@@ -99,7 +99,7 @@ class ParamValidator {
     }
     model(modelName, name){
         name = name || S.string.lcFirst(modelName);
-        console.log(modelName, M[modelName]);
+        console.log('paramvalidator model', modelName, M[modelName]);
         var data = this.request.getOrPostParam(name);
         return new ParamValueModelValidator(this, name, !data ? null : new M[modelName](data));
     }
