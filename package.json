@@ -1,7 +1,7 @@
 {
   "name": "springbokjs-common",
   "description": "SpringbokJS common stuff for browser and server",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "keywords": [
     "springbokjs"
   ],
@@ -13,23 +13,21 @@
     "test": "make test"
   },
   "main": "./lib/index.js",
-  "peerDependencies": {
-    "springbokjs-dom": "^0.8",
-    "springbokjs-dom-components": "^0.4",
-    "springbokjs-utils": "^1.0",
-    "springbokjs-db": "^0.1.2",
-    "socket.io": ">=1.0.0"
-  },
   "dependencies": {
+    "springbokjs-dom": "^0.9.0",
+    "springbokjs-dom-components": "^0.5.0",
+    "springbokjs-utils": "^2.0.1",
+    "springbokjs-db": "^0.2.0",
+    "socket.io": ">=1.3.5",
     "es6like-class": "^0.1.0",
-    "springbokjs-di": "^0.5.1",
-    "springbokjs-router": "^3.4.2",
+    "springbokjs-di": "^0.6.0",
+    "springbokjs-router": "^3.5.0",
     "yielded": "^0.3.1"
   },
   "devDependencies": {
     "gulp": "^3.8",
-    "mocha": "^2.1",
+    "mocha": "^2.2",
     "proclaim": "^2.0",
-    "springbokjs-library": "^3.4.1"
+    "springbokjs-library": "^3.5.2"
   }
 }
