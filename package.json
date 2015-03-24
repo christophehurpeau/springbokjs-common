@@ -1,7 +1,7 @@
 {
   "name": "springbokjs-common",
   "description": "SpringbokJS common stuff for browser and server",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "keywords": [
     "springbokjs"
   ],
