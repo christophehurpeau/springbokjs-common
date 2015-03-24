@@ -1,1 +1,1 @@
-{"version":3,"sources":["base/index.js"],"names":[],"mappings":";;AAAA,OAAO,CAAC,UAAU,GAAG,OAAO,CAAC,cAAc,CAAC,CAAC,UAAU,CAAC","file":"base/index.js","sourceRoot":"../../src/"}
+{"version":3,"sources":["../../src/base/index.js"],"names":[],"mappings":";;AAAA,OAAO,CAAC,UAAU,GAAG,OAAO,CAAC,cAAc,CAAC,CAAC,UAAU,CAAC","file":"src/base/index.js","sourcesContent":["exports.Controller = require('./Controller').Controller;\n"]}
