@@ -1,4 +1,4 @@
-//TODO springbokjs-validator
+// TODO springbokjs-validator
 /*
 S.extendPrototype(Validator, {
     validParams() {
@@ -38,7 +38,7 @@ class ParamValueStringValidator extends ParamValueValidator {
         return this;
     }
 }
-
+/*
 class ParamValueModelValidator extends ParamValueValidator {
     required() {
         if (this.value == null) {
@@ -69,49 +69,50 @@ class ParamValueModelValidator extends ParamValueValidator {
         return this;
     }
 }
-
+*/
 
 class ParamValidator {
     constructor(request) {
         this.request = request;
     }
-    _error(name, key, value){
+    _error(name, key, value) {
         if (!this._errors) {
             this._errors = {};
         }
-        this._errors[name] = {error: key, value: value};
+        this._errors[name] = { error: key, value: value };
     }
-    getErrors(){
+    getErrors() {
         return this._errors;
     }
-    hasErrors(){
+    hasErrors() {
         return !!this._errors;
     }
-    isValid(){
+    isValid() {
         return !this._errors;
     }
 
     string(name, position) {
         return new ParamValueStringValidator(this, name, this.request.param(name, position));
     }
-    int(name, position){
+    /*int(name, position) {
         return new ParamValueIntValidator(this, name, this.request.param(name, position));
     }
-    model(modelName, name){
+    model(modelName, name) {
         name = name || S.string.lcFirst(modelName);
         console.log('paramvalidator model', modelName, M[modelName]);
         var data = this.request.getOrPostParam(name);
         return new ParamValueModelValidator(this, name, !data ? null : new M[modelName](data));
-    }
+    }*/
 }
 
-class ParamValidatorValid extends ParamValidator{
+class ParamValidatorValid extends ParamValidator {
     _error() {
-        /*#if DEV*/ console.warn('Invalid params: ', arguments,
-            "\nRoute=" , this.request.route,
-            "\nGET=", this.request.query,
-            "\nBody=", this.request.body);
-        /*#/if*/
+        /* #if DEV */
+        console.warn('Invalid params: ', arguments,
+            '\nRoute=', this.request.route,
+            '\nGET=', this.request.query,
+            '\nBody=', this.request.body);
+        /* #/if */
         throw S.HttpError.notFound();
     }
 }

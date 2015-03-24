@@ -26,8 +26,8 @@ export class Helper {
         return this.di.createInstanceOf(Controller).then((controller) => {
             var action = controller[actionName];
             if (!action/* || !action.isAction*/) {
-                return this.response.notFound(undefined, 'Action Not Found: '
-                             + route.controller + '.' + route.action);
+                return this.response.notFound(undefined, 'Action Not Found: ' +
+                             route.controller + '.' + route.action);
             }
             controller.helper = this;
             return Y.promise(controller[actionName](this.request, this.response));
@@ -39,10 +39,10 @@ export class Helper {
         if (S.isString(to)) {
             return to;
         }
-        //TODO put this in springbokjs-router
+        // TODO put this in springbokjs-router
         var args = to.slice(1), options = {};
-        if (args && typeof args[args.length -1] === 'object') {
-            options = args[args.length -1];
+        if (args && typeof args[args.length - 1] === 'object') {
+            options = args[args.length - 1];
             args = args.slice(0, -1);
         }
         var route = this.app.router.get(to[0]).get(this.request.lang);
