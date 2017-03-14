@@ -1,6 +1,8 @@
 springbokjs-common [![NPM version][npm-image]][npm-url]
 ============================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/christophehurpeau/springbokjs-common.svg)](https://greenkeeper.io/)
+
 Tools and frameworks from browser and server
 
 
